@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             realm.beginTransaction();
 
             person.setFirstName(editTextFirstName.getText().toString());
-            person.setLastName(editTextFirstName.getText().toString());
+            person.setLastName(editTextLastName.getText().toString());
             person.setAge(Integer.parseInt(editTextAge.getText().toString()));
 
             if(buttonSave.getText().toString().equalsIgnoreCase("save")){
@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = getIntent();
             finish();
             startActivity(intent);
-
         });
     }
 
