@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonSave;
     private Button buttonRestart;
 
-    private Person person;
+    private Person person = new Person();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
